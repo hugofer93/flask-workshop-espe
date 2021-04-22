@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>LISTA DE TAREAS</h2>
+<ol>
+    {% for task in tasks %}
+    <li>{{ task.name|title }}</li>
+    {% else %}
+    <li>NO HAY TAREAS...</li>
+    {% endfor %}
+</ol>
+<a href="{{ url_for('home') }}">Regresar al Inicio</a>
+{% endblock %}

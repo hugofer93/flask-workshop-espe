@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>HOME</h2>
+<ol>
+    <li><a href="{{ url_for('list_') }}">Lista de Tareas</a></li>
+    <li><a href="{{ url_for('add_task') }}">Agregar Tarea</a></li>
+</ol>
+{% endblock %}

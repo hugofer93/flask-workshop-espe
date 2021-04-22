@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>AGREGAR TAREA</h2>
+{% from "_formhelpers.html" import render_field %}
+<form method="POST">
+  {{ form.csrf_token }}
+  {{ render_field(form.name) }}
+  <input type=submit value="Agregar Tarea">
+</form>
+
+<a href="{{ url_for('home') }}">Regresar al Inicio</a>
+{% endblock %}
