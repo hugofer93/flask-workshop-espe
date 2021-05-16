@@ -1,17 +1,19 @@
 [tool.poetry]
 name = "todo-list"
 version = "0.1.0"
-description = ""
-authors = ["Hugo Silva <hugofer93@gmail.com>"]
+description = "Workshop: Entornos Virtuales en Python orientado a DevOps | Taller de Flask"
+authors = ["Hugo Silva Álvarez <hugofer93@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-Flask = "~1.1"
+python = "~3.8"
 python-decouple = "~3.4"
+Flask = "~1.1"
 SQLAlchemy = "~1.4"
 Flask-WTF = "~0.14"
 
 [tool.poetry.dev-dependencies]
+pylint = "~2.8"
+pycodestyle = "~2.7"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
